@@ -94,11 +94,126 @@ algoritmo que leia o custo de fábrica de um carro e escreva o custo ao consumid
 {
     double porcentagem, impostos, custo;
     printf("porcentagem do distribuidor: ");
-    scanf("%lf", porcentagem);
+    scanf("%lf", &porcentagem);
     printf("impostos: ");
-    scanf("%lf", impostos);
+    scanf("%lf", &impostos);
     custo = (porcentagem + impostos);
-    printf("o custo de fabrica de um carro é: %lf\n", custo);
+    printf("o custo de fabrica de um carro e: %2.lf mil \n", custo);
+    return 0;
+
+}*/
+
+/*int main()
+{
+    double fabrica, dist, imposto, custo;
+    printf("informe o custo da fabrica: ");
+    scanf("%lf", &fabrica);
+    dist = fabrica * 0.28;
+    imposto = fabrica * 0.45;
+    custo = fabrica + dist + imposto;
+    printf("O custo total eh: %.2lf\n", custo);
+    return 0;
+
+}*/
+
+/*int main()
+{
+    int dia,mes,ano;
+    printf("Dia: ");
+    scanf("%d", &dia);
+    printf("Mes: ");
+    scanf("%d", &mes);
+    printf("Ano: ");
+    scanf("%d", &ano);
+    printf("esse e o dia, ano e mes que voce escolheu Dia:%d Mes:%d Ano:%d ", dia,mes,ano);
+    return 0;
+}*/
+
+/*int main()
+{
+    int nota1,nota2,nota3,media;
+    printf("Nota da prova 1: ");
+    scanf("%d", &nota1);
+    printf("Nota da prova 2: ");
+    scanf("%d", &nota2);
+    printf("Nota da recuperacao: ");
+    scanf("%d", &nota3);
+    
+        if (media <= 60) {
+            printf("Aluno aprovado!\n");
+        } else {
+            printf("Aluno reprovado =(\n");
+        }
+        return 0;
+
+}*/
+
+
+/*int main()
+{
+    int numero, dezena;
+    printf("Digite um numero inteiro de 3 algarismo: ");
+    scanf("%d", &numero);
+
+    dezena = (numero / 10) % 10;
+     printf("A casa das dezenas e : %d\n", dezena);
+     return 0; 
+}*/
+
+/*int main()
+{
+    int centena, dezena, unidade;
+    printf("O algarismo da casa da Unidade e: ");
+    scanf("%d",  &centena);
+    printf("o algorismo da casa da dezena e : ");
+    scanf("%d",  &dezena);
+    printf("O algarismo da casa da centena e : ");
+    scanf("%d", &unidade);
+    printf("O algorismo da casa da dezena e : %d", dezena);
+    return 0;
+}*/
+
+/*int main()
+{
+    int centena, dezena, unidade;
+    printf("Digite um numero inteiro de 3 algarismo: ");
+    scanf("%d%d%d", &centena, &dezena, &unidade);
+
+    dezena = (dezena * 10);
+     printf("A casa das dezenas e : %d\n", dezena);
+     return 0; 
+}
+     */
+
+
+/*int main()
+{
+int num1,num2, soma;
+printf("De o primeiro numero: ");
+scanf("%d", &num1);
+printf("De o segundo numero: ");
+scanf("%d", &num2);
+soma = num1 + num2;
+printf(" a soma de %d e %d eh : %d", num1, num2, soma);
+return 0;
+}*/
+
+
+/*Escrever um algoritmo em C que recebe como entrada um inteiro que representa uma
+data no formato ddmmaa e imprima na tela a seguinte saída:
+Dia: dd Mês: dd Ano: dd 
+*/
+
+/*int main()
+{
+    int dia,mes,ano, num,aux;
+    printf("informe o numero no formato ddmmaa :");
+    scanf("%d", &num);
+    dia = num / 10000;
+    aux = num % 10000;
+    mes = aux / 100;
+    ano = aux % 100;
+    printf("dia: %d mes: %d ano: %d", dia, mes, ano, aux);
     return 0;
 
 }*/
