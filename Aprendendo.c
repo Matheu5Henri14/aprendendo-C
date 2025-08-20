@@ -315,7 +315,7 @@ A e B. O seu algoritmo deve efetuar a troca dos valores de forma que a variável
 A passe a possuir o valor da variável B e a variável B passe a possuir o valor da
 variável A. Por fim, o seu algoritmo deve imprimir o valor das variáveis A e B.*/
 
-int main()
+/*int main()
 {
     int a,b,c;
     printf("de o valor de a: ");
@@ -327,7 +327,7 @@ a = b;
 b = c;
 
 printf("Logo a eh %d e b eh %d", a, b);
-}
+}*/
 
 /*====================================================================================================================*/
 
