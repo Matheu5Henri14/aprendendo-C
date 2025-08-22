@@ -357,18 +357,15 @@ quanto restará de ração no saco após cinco dias*/
 
 /*int main()
 {
-    double kg,gramas, kiko, chico;
+    double kg,gramas;
     printf("Kg do saco de racao: ");
     scanf("%lf", &kg);
-    printf("Quantas gramas o kiko come: ");
-    scanf("%lf", &kiko);
-    printf("QUantas gramas o chico come: ");
-    scanf("%lf", &chico);
+    printf("Quantas gramas o kiko e o chico come: ");
+    scanf("%lf", &gramas);
     kg = kg * 1000; //1000 = 1kg
-    gramas = kiko + chico; //quantos cada um come
     gramas = gramas*5; //5 dias
     kg = kg - gramas; //Quantos sobrou
-
+// na hora de testar o codigo colocar "2.000" e nao "2000" para dar certo.
     printf("O vai sobrar no saco de racao apos 5 dias eh: %2.lf", kg);
     return 0;
 }*/
