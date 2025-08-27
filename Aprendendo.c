@@ -384,6 +384,8 @@ quanto restará de ração no saco após cinco dias*/
     return 0;
 }*/
 
+/*====================================================================================================================*/
+
 /*int main(){
     
     int a,b, soma;
@@ -402,6 +404,8 @@ quanto restará de ração no saco após cinco dias*/
     }
     return 0;
 }*/
+
+/*====================================================================================================================*/
 
 /*int main(){
     int a, b, soma;
@@ -422,6 +426,8 @@ quanto restará de ração no saco após cinco dias*/
     return 0;
 }*/
 
+/*====================================================================================================================*/
+
 /*int main(){
     int a,b;
     printf("De o valor de A: ");
@@ -439,6 +445,8 @@ quanto restará de ração no saco após cinco dias*/
     return 0;
     
 }*/
+
+/*====================================================================================================================*/
 
 /*int main(){
     int a;
@@ -459,6 +467,8 @@ quanto restará de ração no saco após cinco dias*/
     
     return 0;
 }*/
+
+/*====================================================================================================================*/
 
 /*Escreva um algoritmo em C que recebe dois números inteiros do
 usuários e verifica se ambos os números são pares. Em caso posi9vo
@@ -486,6 +496,8 @@ informar.*/
     return 0;
 }*/
 
+/*====================================================================================================================*/
+
 /*int main(){
     char sexo;
     double altura,peso;
@@ -507,6 +519,9 @@ else{
 }
 return 0;
 }*/
+
+/*====================================================================================================================*/
+
 /*Faça um programa que receba três números e mostre-os em ordem
 crescente*/
 /*int main(){
@@ -529,12 +544,13 @@ crescente*/
     
 }*/
 
+/*====================================================================================================================*/
 
 /*• Faça um programa que receba como entrada uma data no formato
 (dd/mm/aa) e determine se ela é válida. Ou seja, verifique se o mês
 está entre 1 e 12, e se o dia existe naquele mês. Note que fevereiro
 tem 29 dias em anos bissextos, e 28 dias em anos não bissextos.*/
-int main(){
+/*int main(){
     int  dd,mm,aa;
     printf("informe seu dia de nascimento: ");
     scanf("%d", &dd);
@@ -568,4 +584,6 @@ int main(){
         printf("Ano invalido\n ");
     }
     return 0;
-}
+}*/
+
+/*====================================================================================================================*/
