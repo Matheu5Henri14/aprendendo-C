@@ -308,6 +308,19 @@ idade da pessoa em meses e a idade da pessoa em dias.*/
     printf(" quantos anos de idade: %d, anos %d, meses %d, dias %d", anos, meses, dias);
     return  0;
 }*/
+/*int main(){
+    int nascimento, agora,anos,meses,dias;
+    printf("Em que anos voce esta no momento: ");
+    scanf("%d", &agora);
+    printf("Ano de nascimento: ");
+    scanf("%d", &nascimento);
+    anos = agora - nascimento;
+    meses = anos * 12;
+    dias = anos * 365;
+    printf("Sua idade em anos eh: %d ", anos);
+    printf("meses eh: %d ", meses);
+    printf("Sua idade em dias eh: %d ", dias);
+    }*/
 
 /*====================================================================================================================*/
 
@@ -330,7 +343,7 @@ b = c;
 printf("Logo a eh %d e b eh %d", a, b);
 }*/
 
-/*====================================================================================================================*/
+/*==========================================================================================================================*/
 
 /*5. Crie um algoritmo para realizar a conversão de valores informados em real (R$)
 para dólar (US$). O programa deve receber como entrada o valor em real e o valor
@@ -369,4 +382,128 @@ quanto restará de ração no saco após cinco dias*/
 // na hora de testar o codigo colocar "2.000" e nao "2000" para dar certo.
     printf("O vai sobrar no saco de racao apos 5 dias eh: %2.lf", kg);
     return 0;
+}*/
+
+/*int main(){
+    
+    int a,b, soma;
+    printf("De o valor de a: ");
+    scanf("%d", &a);
+    printf("De o valor de b: ");
+    scanf("%d", &b);
+    soma = a + b;
+    if (soma > 10)
+    {
+        printf("A soma eh: %d", soma);
+    }
+    else
+    {
+        printf("A soma eh menor ou igual a 10!");
+    }
+    return 0;
+}*/
+
+/*int main(){
+    int a, b, soma;
+    printf("De o valor de A: ");
+    scanf("%d", &a);
+    printf("De o valor de B: ");
+    scanf("%d", &b);
+    soma = a + b;
+    if (soma == 10)
+    {
+        printf("%d Sao iguais");
+    }
+    else
+    {
+        printf("Nao sao iguas");
+    }
+    
+    return 0;
+}*/
+
+/*int main(){
+    int a,b;
+    printf("De o valor de A: ");
+    scanf("%d", &a);
+    printf("De o valor de B: ");
+    scanf("%d", &b);
+    if (a<b)
+    {
+        printf("%d %d", a,b);
+    }
+    else
+    {
+        printf("%d %d", b,a);
+    }
+    return 0;
+    
+}*/
+
+/*int main(){
+    int a;
+    printf("Informe um numero: ");
+    scanf("%d", &a);
+    if (a > 0)
+    {
+        printf("Numero positivo!");
+    }
+    else if (a == 0)
+    {
+        printf("Numero nulo!");
+    }
+    else
+    {
+        printf("Numero negativo!");
+    }
+    
+    return 0;
+}*/
+
+/*Escreva um algoritmo em C que recebe dois números inteiros do
+usuários e verifica se ambos os números são pares. Em caso posi9vo
+imprimir a mensagem “Ambos os números informados são pares!”.
+Em caso nega9vo, verificar se algum dos dois números é par e
+informar.*/
+
+    /*int main(){
+    int a,b;
+    printf("De o valor de A: ");
+    scanf("%d", &a);
+    printf("De o valor de B: ");
+    scanf("%d", &b);
+
+    if (a%2==0 && b%2==0) {
+        printf("Ambos os numeros informados sao pares!");
+    } else if {
+        printf("apenas 1 eh par!");
+    }
+    else
+    {
+        printf("Os dois nnumeros sao impares");
+    }
+    
+    return 0;
+}*/
+
+/*int main(){
+    char sexo;
+    double altura,peso;
+    printf("Informe o sexo: ");
+    scanf("%c", &sexo);
+    printf("Informe a altura: ");
+    scanf("%lf", &altura);
+    if (sexo == 'M' || sexo == 'm')
+    {
+        peso = (72.7 * altura) - 58;
+        printf("Peso ideal: %.2lf\n", peso);
+    }
+    else if(sexo =='f' || sexo == 'F'){
+        peso = (62.1 * altura) - 44.7;
+        printf("Peso ideal: %.2lf\n", peso);
+    }
+else{
+    printf("Opcao invalida!");
+}
+return 0;
 }*/
