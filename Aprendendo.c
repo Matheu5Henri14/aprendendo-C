@@ -507,3 +507,65 @@ else{
 }
 return 0;
 }*/
+/*Faça um programa que receba três números e mostre-os em ordem
+crescente*/
+/*int main(){
+    int a,b,c;
+    printf("De o primeiro numero: ");
+    scanf("%d", &a);
+    printf("De o segundo numero: ");
+    scanf("%d", &b);
+    printf("De o terceiro numero: ");
+    scanf("%d", &c);
+    if (a>=b && b>=c)
+    {
+        printf("A ordem eh: %d, %d, %d",a,b,c);
+    }
+    else
+    {
+        printf("fora de ordem!");
+    }
+    return 0;
+    
+}*/
+
+
+/*• Faça um programa que receba como entrada uma data no formato
+(dd/mm/aa) e determine se ela é válida. Ou seja, verifique se o mês
+está entre 1 e 12, e se o dia existe naquele mês. Note que fevereiro
+tem 29 dias em anos bissextos, e 28 dias em anos não bissextos.*/
+int main(){
+    int  dd,mm,aa;
+    printf("informe seu dia de nascimento: ");
+    scanf("%d", &dd);
+    printf("informe seu mes de nascimento: ");
+    scanf("%d", &mm);
+    printf("informe seu ano de nascimento: ");
+    scanf("%d", &aa);
+    if (dd>=1 && dd<=29)
+    {
+        printf("dia valido\n");
+    }
+    else
+    {
+        printf("Dia invalido\n");
+    }
+    if (mm>=1 && mm<=12)
+    {
+        printf("mes valido\n");
+    }
+    else if (mm>=13)
+    {
+        printf("mes invalido\n ");
+    }
+    
+    if (aa>=2003 && aa<=2025)
+    {
+        printf("Ano valido\n");
+    }
+    else if (aa<=2002 && aa>=2026)
+    {
+        printf("Ano invalido\n ");
+    }
+    return 0;
+}
