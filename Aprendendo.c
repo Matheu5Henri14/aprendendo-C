@@ -586,4 +586,215 @@ tem 29 dias em anos bissextos, e 28 dias em anos não bissextos.*/
     return 0;
 }*/
 
-/*====================================================================================================================*/
+/*============================================================================================================================================*/
+
+
+/*Tabuada*/
+/*int main(){
+    for (int b = 1; b <=10; b++)
+    {
+        printf("tabuada do %d\n", b);
+    
+    for (int a = 0; a <=10; a++)
+    {
+        printf("%d * %d = %d\n",b,a,(b*a));
+    }
+    }
+    
+}*/
+
+/*============================================================================================================================================*/
+
+/*int main(){
+    char conceito;
+    printf("Informe o conceito do aluno: ");
+    scanf("%c", &conceito);
+    switch (conceito)
+    {
+    case 'a':
+        printf("Excelente!");
+        break;
+    }
+    {
+    case 'b':
+    printf("bom!");
+    break;
+    }
+    {
+    case 'c':
+    printf("regular");
+    break;
+    }
+    {
+    case 'd':
+    printf("reprovado");
+    break;
+    }
+    }*/
+
+/*=============================================================================================================================================*/
+
+/*int main(){
+double n1,n2;
+char operacao;
+printf("Informe dois numeros: ");
+scanf("%lf %lf", &n1,&n2);
+printf("Informe a operacao: +, -, * ou /");
+scanf(" %c", &operacao);
+switch (operacao)
+{
+    case '+':{
+        printf("Soma: %.2lf\n", n1 + n2);
+        break;
+    }
+    case '-':{
+        printf("Subtracao: %.2lf\n", n1,n2);
+        break;
+        
+    }
+    case '/':{
+        if (n2 == 0)
+        {
+            printf("Divisao por zero!\n");
+        }
+        else{
+            printf("Divisao: %.2lf", n1/n2);
+        }
+        break;
+    }
+    case '*':{
+        printf("Vezes: %.2lf\n", n1*n2);
+        break;
+    }
+    default:{
+        printf("Opcao invalida");
+        }
+    }
+}*/
+
+/*=============================================================================================================================================*/
+
+/*int main()
+{
+    int n = 1;
+    while (n <=10){
+        printf("%d\t", n);
+        n++; //e igual a +1
+    }
+    
+    return 0;
+}*/
+
+/*=============================================================================================================================================*/
+
+/*int main()
+{
+    int n,f=1;
+    printf("Informe um numero: ");
+    scanf("%d", &n);
+    while (n>=1)
+    {
+        f *= n;
+        n--;
+    }
+    printf("Fatorial: %d", f);
+    return 0;
+
+}*/
+
+/*============================================================================================================================================*/
+
+/*int main()
+{
+    int cont = 1, n,soma = 0;
+    while(cont <=10){
+         printf("Informe o %d: ",cont);
+        scanf("%d",&n);
+        soma += n;
+        cont++;
+    }
+    printf("A soma dos numeros eh: %d.", soma);
+    return 0;
+}*/
+
+/*==============================================================================================================================================*/
+
+/*int main()
+{
+    int cont =1, n, negativo,soma= 0;
+    while (cont <=15)
+    {
+        printf("informe o %d: ", cont);
+        scanf("%d", &n);
+        if (n >=0)
+        {
+            soma +=n;
+        }
+        else{
+            negativo++;
+            
+        }
+        cont++;
+    
+    }
+    printf("Total %d", soma);
+    printf("numero negativo: %d", negativo);
+    return 0;
+    
+}*/
+
+/*============================================================================================================================================*/
+
+/*Escrever um algoritmo que recebe 15 números reais do usuário,
+determina e escreve a soma dos valores posiGvos e a quanGdade
+de valores negaGvos lidos.*/
+
+/*int main()
+{
+    int cont =1, n,negativo,soma= 0;
+    while (cont <=15)
+    {
+        printf("informe o %d: ", cont);
+        scanf("%d", &n);
+        if (n >=0)
+        {
+            soma +=n; //soma = soma + n;
+        }
+        else{
+            negativo++; // negativo=negativo + 1;
+            
+        }
+        cont++;
+    
+    }
+    printf("Total %d", soma);
+    printf("numero negativo: %d", negativo,);
+    return 0;
+    
+}*/
+
+/*Escreva um algoritmo que recebe 10 números do usuário, verifica
+e imprime o maior e o menor número.*/
+
+int main(){
+    int num,maior,menor,cont = 2;
+    printf("Informe o primeiro numero: ");
+    scanf("%d", &num);
+    maior = num;
+    menor = num;
+    while (cont<=10){
+        printf("Informe o %d numero", cont);
+        scanf("%d", &num);
+        if (num > maior)
+        {
+            maior = num;
+        }
+        else if (num<menor)
+        {
+            menor=num;
+        }
+        cont++;
+    }
+    printf("Maior: %d\nMenor:%d\n", maior,menor);
+    return 0;
+}
