@@ -1,0 +1,213 @@
+/*1. Escreva um programa em C que inicialmente recebe do usuário um valor inteiro
+i. Logo após, o seu programa deve solicitar ao usuário que informe mais 3 valores
+a, b e c (podem ser inteiros ou decimais). Se o valor de i for par então o seu
+programa deve calcular e imprimir na tela a média aritmética de a, b e c. Caso
+contrário, se i>10 então o programa deve calcular e imprimir na tela a média
+ponderada de a, b e c. Os pesos dos valores são respectivamente 2, 3 e 4.*/
+
+/*int main(){
+    int i;
+    double a,b,c;
+    printf("De o valor de I; ");
+    scanf("%d", &i);
+    printf("De o valor de A,B e C: ");
+    scanf("%lf %lf %lf", &a, &b, &c);
+    if (i%2==0)
+    {
+        printf("A media aritmetica eh: %.2lf", ((a+b+c)/3));
+    }
+    else if (i>10 && i%2==1)
+    {
+       printf("A media ponderada eh: %.2lf",((a*2)+(b*3)+(c*4))/9);
+    }
+    
+    else{
+        printf("eh impar eh menor que 10");
+    }
+   
+}*/
+
+/*============================================================================================================================================*/
+
+/*2. Elabore um algoritmo em C que receba dois valores do usuário, que correspondem
+a base e a altura de um retângulo. Seu algoritmo deve verificar inicialmente se os
+valores formam um retângulo ou um quadrado. Caso formem um quadrado,
+imprima a palavra QUADRADO, e caso seja um retângulo, mostre o perímetro
+(soma de todos os lados) e a área (base vezes a altura) do retângulo.*/
+
+/*int main(){
+int base,altura,perimetro,area;
+printf("Fale a altura primeiro: ");
+scanf("%d", &altura);
+printf("De a base agora: ");
+scanf("%d", &base);
+if (base == altura)
+{
+    printf("Isso eh claramente um quadrado");
+}
+else{
+    perimetro = (base * 2)+(altura * 2); // sempre faça * 2 a base a altura
+    area = base * altura;
+    printf("Voce deu as proporcoes de um triangulo sendo assim a base %d a altura %d, o perimetro:%d e a area:%d", base,altura,perimetro,area);
+    return 0;
+}
+}*/
+
+/*=============================================================================================================================================*/
+
+/*3. Escreva um algoritmo que permite ao usuário executar ações a partir de dois
+números informados por ele. O seu algoritmo deve solicitar inicialmente ao
+usuário informe os dois números e depois exibir o seguinte menu em tela:
+1- Soma de 2 números.
+2- Diferença entre 2 números (maior pelo menor).
+3- Produto entre 2 números.
+4- Divisão entre 2 números (o denominador não pode ser zero).
+O seu programa deve retornar o resultado de acordo com a opção escolhida pelo
+usuário, obedecendo as restrições existentes em algumas das opções (caso sejam
+escolhidas).*/
+
+/*int main(){
+    double a,b, resultado;
+    int opcao;
+    printf("Digite o primeiro numero: ");
+    scanf("%lf", &a);
+    printf("Informe o segundo numero: ");
+    scanf("%lf", &b);
+    printf("\nEscolha uma das opcoes\n");
+    printf("1 - A soma dos 2 numeros\n");// +
+    printf("2- Diferenca entre 2 numeros (maior pelo menor).\n"); //-
+    printf("3- Produto entre 2 numeros.\n"); // *
+    printf("4- Divisão entre 2 numeros (o denominador não pode ser zero)\n");// %
+    scanf("%d", &opcao);
+if (opcao == 1)
+{
+ resultado = a + b;
+ printf("A soma dos 2 numeros eh: %.2lf", resultado);   
+}
+else if (opcao == 2)
+{
+    if (a>b)
+    {
+        resultado = a - b;
+       
+    }else{
+            resultado = b - a;
+        }
+    printf("A diferenca entre 2 numeros eh %.2lf", resultado);
+}
+else if (opcao == 3)
+{
+    resultado = a*b;
+    printf("O produto entre os 2 numero eh: %.2lf", resultado);
+}
+else if (opcao == 4)
+{
+    resultado = a/b;
+    printf("A divisao entre esses 2 numeros eh: %.2lf", resultado);
+}
+
+}*/
+
+/*=============================================================================================================================================*/
+
+
+/*4. As tarifas de certo parque de estacionamento são as seguintes:
+1ª e 2ª hora - R$ 1,00 cada
+3ª e 4ª hora - R$ 1,40 cada
+5ª hora e seguintes - R$ 2,00 cada
+O número de horas a pagar é sempre inteiro e arredondado por excesso. Deste
+modo, quem estacionar durante 61 minutos pagará por duas horas, que é o mesmo
+que pagaria se tivesse permanecido 120 minutos. Os momentos de chegada ao
+parque e partida deste são apresentados na forma de pares de inteiros,
+representando horas e minutos. Por exemplo, o par 12 50 representará “dez para
+a uma da tarde”. Pretende-se criar um programa que, lidos pelo teclado os
+momentos de chegada e de partida, escreva na tela o preço cobrado pelo
+estacionamento. Admite-se que a chegada e a partida se dão com intervalo não
+superior a 24 horas. Portanto, se uma dada hora de chegada for superior à da
+partida, isso não é uma situação de erro, antes significará que a partida ocorreu no
+dia seguinte ao da chegada.*/
+
+/*int main(){
+    double min,horas;
+    printf("Quantas hoars voce ficou: ");
+    scanf("%lf", &horas);
+    printf("Quantos minutos ?: ");
+    scanf("%lf", &min);
+    if (horas<=1 && min<=60)
+    {
+        printf("Voce pagara 1R$");
+    }
+    else if (min>=61)
+    {
+        printf("Voce pagara 1R$");
+    }
+    
+    else if (horas>1 && horas<=2 && min>=61)
+        {printf("Voce pagara 1R$");
+
+    }
+    else if (horas>= 3 && horas<=4)
+    {
+        printf("Voce pagara 1.40R$");
+    }
+    else if (horas>=5)
+    {
+        printf("Voce pagara 2R$");
+    }
+    
+    
+
+    return 0;
+}*/
+
+
+
+/*=============================================================================================================================================*/
+
+/*5. Uma empresa determinou um reajuste salarial de 5 % a todos os seus funcionários.
+Além disto, concedeu um abono de R$ 100,00 para aqueles que recebem até R$
+750,00. Escreva um algoritmo que, dado o valor do salário de um funcionário,
+informe para quanto ele será reajustado.*/
+
+/*int main(){
+    double salario,reajuste;
+    printf("Digite seu salario: ");
+    scanf("%lf", &salario);
+    if (salario>=750 && (reajuste=(salario/100)*5))
+    {
+        printf("O aumento de 5%% foi feito tendo o aumento de: %.2lfR$", reajuste);
+    }
+    else if (salario<=750)
+    {
+        printf("Voce recebeu um abono de 100R$");
+    }
+    
+    
+}*/
+
+/*=============================================================================================================================================*/
+
+/*6. Escrever um algoritmo que apresenta ao usuário menus de escolhas de pratos,
+sobremesas e bebidas, de acordo com a tabela abaixo.
+O usuário pode escolher um dos pratos, uma das sobremesas e uma das bebidas
+desse cardápio. A seguir, o algoritmo deve calcular e escrever o total de calorias
+da refeição, com base nas calorias dos pratos escolhidos.*/
+
+/*int main(){
+    int prato, sobremesa, bebida,soma;
+    printf("Escolha seu prato principal entre Vegetariano(180Cal),Peixe(230Cal),Frango(250Cal),Carne(350Cal) : ");
+    scanf("%d", &prato);
+    printf("Escolha sua sobremesa entre abacaxi(75Cal),sorvete(110Cal),moussediet(170),mousseChocolate(200Cal) : ");
+    scanf("%d", &sobremesa);
+    printf("Escolha sua bebida entre Cha(20Cal),sucodelaranja(70Cal),sucodemelao(100Cal),Refrigerante(65Cal) :");
+    scanf("%d", &bebida);
+    if (soma=prato+sobremesa+bebida)
+    {
+        printf("O tanto de caloria que voce ira comer eh: %dCal", soma);
+    }
+    else{
+        printf("Voce nao escolheu nem um prato :(");
+    }
+    return 0;
+    
+}*/ 
