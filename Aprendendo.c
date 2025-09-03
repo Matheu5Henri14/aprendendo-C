@@ -1,5 +1,107 @@
 
 # include <stdio.h>
+#include <math.h>
+
+/*int main()
+{
+  double angulo, seno,cosseno,tangente;
+  printf("Informe o valor do angulo: ");
+  scanf("%lf", &angulo);
+  seno = sin(angulo);
+  cosseno = cos(angulo);
+  tangente = tan(angulo);
+  printf("Seno: %.2lf\n", seno);
+  printf("Cosseno: %.2lf\n", cosseno);
+  printf("Tangente: %.2lf\n", tangente);
+  return 0;
+}*/
+
+/*int main()
+{
+  double num, raiz;
+  printf("informe o numero: ");
+  scanf("%lf", &num);
+  raiz = sqrt(num);
+  printf("A raiz do numero eh: %.2lf\n", raiz);
+  return 0;
+    }*/
+
+   /* int main() {
+    double x, y, resultado;
+    printf("informe o valor de x: ");
+    scanf("%lf", &x);
+    printf("informe o valor de y: ");
+    scanf("%lf", &y);
+    resultado = pow(x,y);
+    printf("resultado: %.2lf\n", resultado);
+    return 0;
+    }*/
+
+    /* Floor: arrendonda o número informado para o inteiro menor que ele
+• Assinatura da função: double floor(double)
+• Exemplo: y = floor(3.5); o valor de y é 3
+• Ceil: arrendonda o número informado para o inteiro maior que ele
+• Assinatura da função: double ceil (double)
+• Exemplo: y = ceil(3.5); o valor de y é 4*/
+
+/*Round:
+• Caso o número informado seja inferior a x.5, o número é arredondado para baixo.
+Caso contrário, o número é arredondado para cima.
+• Assinatura da função: double round (double)
+• Exemplo:
+• y = round(3.5); o valor de y é 4
+• y = round(3.45); o valor de y é 3*/
+
+/*int main(){
+  double num;
+  printf("informe um  numero: ");
+  scanf("%lf", &num);
+  printf("Floor: %d\n", floor(num));
+  printf("Ceil: %2.lf\n", ceil(num));
+  printf("Round: %2.lf\n", round(num));
+  return 0;
+}*/
+
+
+/////////////////////////////////////////////////////////
+/*int main()
+{
+  double num,cubo,quad;
+  printf("informe um numero: ");
+  scanf("%lf", &num);
+quad = pow(num, 2);
+cubo = pow(num,3);
+printf("quadrado: %2.lf\nCubo: %.2lf", quad, cubo);
+return 0;
+}*/
+
+
+/*Escreva um algoritmo em C que recebe do usuário um número e imprime seu quadrado e seu
+cubo. FEITO*/
+
+/*int main()
+{
+  double num1,num2, resultado;
+  printf("informe o primeiro numero: ");
+  scanf("%lf", &num1);
+  printf("informe o segundo numero: ");
+  scanf("%lf", &num2);
+  resultado = sqrt(num1*num2);
+  printf("Resultado: %2.lf\n", resultado);
+  return 0;
+}*/
+/////////////////////////////////////////////////////////////////
+/*• Escrever um algoritmo em C que recebe dois números do usuário e retorna a raiz quadrada da
+mulNplicação desses números.*/
+
+/*• Nesse exercício, você deve escrever um algoritmo para calcular o valor de um termo n de uma
+progressão aritméNca (PA), que tem a seguinte fórmula:
+an= "#$%&$#' + ) − 1 ∗ #-.ã'
+Dessa forma, o algoritmo deve solicitar ao usuário que informe o valor do primeiro termo, o valor
+da razão da P.A. e seu número de ordem (n), e deve imprimir o termo calculado a parNr dos
+valores informados.*/
+
+/*============================================================================================================================================*/
 
 /*
 int main()
@@ -776,7 +878,7 @@ de valores negaGvos lidos.*/
 /*Escreva um algoritmo que recebe 10 números do usuário, verifica
 e imprime o maior e o menor número.*/
 
-int main(){
+/*int main(){
     int num,maior,menor,cont = 2;
     printf("Informe o primeiro numero: ");
     scanf("%d", &num);
@@ -797,4 +899,40 @@ int main(){
     }
     printf("Maior: %d\nMenor:%d\n", maior,menor);
     return 0;
-}
+}*/
+
+/*Escreva um programa em C que inicialmente recebe do usuário um valor inteiro
+i. Logo após, o seu programa deve solicitar ao usuário que informe mais 3 valores
+a, b e c (podem ser inteiros ou decimais). Se o valor de i for par então o seu
+programa deve calcular e imprimir na tela a média aritmética de a, b e c. Caso
+contrário, se i>10 então o programa deve calcular e imprimir na tela a média
+ponderada de a, b e c. Os pesos dos valores são respectivamente 2, 3 e 4.*/
+
+/*int main(){
+    int i;
+    double a,b,c;
+    printf("De o valor de I; ");
+    scanf("%d", &i);
+    printf("De o valor de A,B e C: ");
+    scanf("%lf %lf %lf", &a, &b, &c);
+    if (i%2==0)
+    {
+        printf("A media aritmetica eh: %.2lf", ((a+b+c)/3));
+    }
+    else if (i>10 && i%2==1)
+    {
+       printf("A media ponderada eh: %.2lf",((a*2)+(b*3)+(c*4))/9);
+    }
+    
+    else{
+        printf("eh impar eh menor que 10");
+    }
+   
+}*/
+
+/*6. Escrever um algoritmo que apresenta ao usuário menus de escolhas de pratos,
+sobremesas e bebidas, de acordo com a tabela abaixo.
+O usuário pode escolher um dos pratos, uma das sobremesas e uma das bebidas
+desse cardápio. A seguir, o algoritmo deve calcular e escrever o total de calorias
+da refeição, com base nas calorias dos pratos escolhidos.*/
+
