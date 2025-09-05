@@ -195,19 +195,89 @@ da refeição, com base nas calorias dos pratos escolhidos.*/
 
 /*int main(){
     int prato, sobremesa, bebida,soma;
-    printf("Escolha seu prato principal entre Vegetariano(180Cal),Peixe(230Cal),Frango(250Cal),Carne(350Cal) : ");
+    printf("Escolha seu prato principal entre 1-Vegetariano(180Cal),2-Peixe(230Cal),3-Frango(250Cal),4-Carne(350Cal) : ");
     scanf("%d", &prato);
-    printf("Escolha sua sobremesa entre abacaxi(75Cal),sorvete(110Cal),moussediet(170),mousseChocolate(200Cal) : ");
+    printf("Escolha sua sobremesa entre 1-abacaxi(75Cal),2-sorvete(110Cal),3-moussediet(170),4-mousseChocolate(200Cal) : ");
     scanf("%d", &sobremesa);
-    printf("Escolha sua bebida entre Cha(20Cal),sucodelaranja(70Cal),sucodemelao(100Cal),Refrigerante(65Cal) :");
+    printf("Escolha sua bebida entre 1-Cha(20Cal),2-sucodelaranja(70Cal),3-sucodemelao(100Cal),4-Refrigerante(65Cal) :");
     scanf("%d", &bebida);
-    if (soma=prato+sobremesa+bebida)
+    switch (prato)
     {
-        printf("O tanto de caloria que voce ira comer eh: %dCal", soma);
+    case 1:{
+     soma = 180;
+     break;
     }
-    else{
-        printf("Voce nao escolheu nem um prato :(");
+    case 2:{
+        soma = 230;
+        break;
     }
-    return 0;
+    case 3:{
+        soma = 250;
+        break;
+    }
+    case 4:{
+        soma = 350;
+        break;
+    }
     
-}*/ 
+    default:{
+        printf("Nao existe essa opcao de prato\n");
+    }
+   
+    }
+    switch (sobremesa)
+    {
+    case 1:{
+        soma += 75;
+        break;
+    }
+    case 2:{
+        soma +=110;
+        break;
+    }
+    case 3:{
+        soma += 170;
+        break;
+    }
+    case 4:{
+        soma += 200;
+        break;
+    }
+    
+    default:{
+        printf("Nao temos essa opcao de sobremesa, logo nao sera comtabilizado\n");
+       
+    }
+    }
+    switch (bebida)
+    {
+    case 1:{
+        soma += 20;
+        break;
+    }//20,70,100,65
+    
+    case 2:{
+        soma +=70;
+        break;
+    }
+    case 3:{
+        soma += 100;
+        break;
+    }
+    case 4:{
+        soma +=65;
+        break;
+        if(bebida>4){
+            printf("nao tem");
+        }else{
+
+        }
+    }
+    default:{
+        printf("Nao temos essa opcao de bebida, logo nao sera contabilizado\n");
+    }
+    }
+    printf("Voce escolheu o %d, %d e o %d e a soma das calorias eh: %d", prato,sobremesa,bebida,soma);
+    return 0;
+}*/
+
