@@ -132,7 +132,7 @@ return 0;
     
 }*/
 
-int main(){
+/*int main(){
     int lado1,lado2,lado3;
     printf("Informe o 1 valor:");
     scanf("%d", &lado1);
@@ -151,5 +151,5 @@ int main(){
         printf("Eh um Escaleno por conter 3 lados diferentes");
     }
     return 0;
-}
+}*/
 //apenas pratica
