@@ -281,3 +281,205 @@ da refeição, com base nas calorias dos pratos escolhidos.*/
     return 0;
 }*/
 
+/*=====================================⬇️ATIVIDADE DO DIA 10-09-2025⬇️=====================================*/
+
+
+    
+    
+/*Escreva um programa em C que receba do usuário a idade, o peso e o sexo de 10
+pessoas. Por fim, o seu algoritmo deve imprimir:
+a. O total de homens;
+b. O total de mulheres;
+c. A soma e a média das idades dos homens;
+d. A soma e a média dos pesos das mulheres.*/
+
+
+/*int main() {
+    int idade, totalHomens = 0, totalMulheres = 0;
+    int somaIdadeHomens = 0, somaIdadeMulheres = 0;
+    char sexo;
+    double mediaHomens = 0.0, mediaMulheres = 0.0;
+
+    for (int i = 1; i <= 10; i++) {
+        printf("Pessoa %d:\n", i);
+        
+        printf("Idade: ");
+        scanf("%d", &idade);
+
+        printf("Peso: ");
+        float peso;
+        scanf("%f", &peso);
+
+        printf("Sexo (M/F): ");
+        scanf(" %c", &sexo); 
+
+        if (sexo == 'M' || sexo == 'm') {
+            totalHomens++;
+            somaIdadeHomens += idade;
+        } else if (sexo == 'F' || sexo == 'f') {
+            totalMulheres++;
+            somaIdadeMulheres += idade;
+        } else {
+            printf("nao tem (use M ou F)\n");
+            i--; 
+        }
+
+        printf("\n");
+    }
+
+    if (totalHomens > 0)
+        mediaHomens =  somaIdadeHomens / totalHomens;
+
+    if (totalMulheres > 0)
+        mediaMulheres =  somaIdadeMulheres / totalMulheres;
+
+    printf("Total de homens: %d\n", totalHomens);
+    printf("Total de mulheres: %d\n", totalMulheres);
+    printf("Soma das idades dos homens: %d\n", somaIdadeHomens);
+    printf("Media das idades dos homens: %.2f\n", mediaHomens);
+    printf("Soma das idades das mulheres: %d\n", somaIdadeMulheres);
+    printf("Media das idades das mulheres: %.2f\n", mediaMulheres);
+
+    return 0;
+}*/
+
+
+/*2. Escreva um programa que receba do usuário 10 valores inteiros e positivos e:
+a. Encontre e imprima o maior valor;
+b. Encontre e imprima o menor valor;
+c. Calcule a média dos números lidos.*/
+
+/*int main(){
+    int valor;
+    double maior,menor,soma;
+    
+    for (int i = 1; i <=10; i++)
+
+    {
+        printf("De o valor %d: ", i);
+        scanf("%d", &valor);
+        if (i == 1)
+        {
+            maior=valor;
+            menor=valor;
+        }
+        else if (maior<valor)
+        {
+            maior=valor;
+        }else if (menor>valor)
+        {
+            menor=valor;
+        }
+        soma+=valor;
+        
+        
+        
+    }
+    printf("O maior numero eh: %.2lf\n e o menor eh %.2lf\n a soma dos valores eh: %.2lf\n", maior,menor,soma,(soma/10));
+
+    return 0;
+    
+}*/
+
+/*3. Escreva um programa que receba do usuário 2 valores inteiros e positivos: X e Y.
+O seu programa deve calcular e escrever o valor da função potência XY utilizando
+um laço de repetição (ou seja, sem utilizar a função pow)*/
+
+/*int main(){
+    int X,Y, soma;
+    for (int i = 1; i <=1; i++)
+    {
+        printf("De o valor de x: ");
+        scanf("%d", &X);
+        printf("De o valor de Y: ");
+        scanf("%d", &Y);
+    }
+    soma=X+Y;
+    printf("A soma eh de %d e %d eh %d", X,Y,soma);
+    return 0;
+}*/
+
+
+
+/*4. Escreva um algoritmo que exiba uma mensagem com as opções "1-
+multiplicar","2-somar", "3- Subtrair", "4-Dividir", "5-Sair". O seu programa deve
+ler a opção desejada (1, 2, 3, 4), solicitar ao usuário que informe dois valores,
+executar a operação escolhida e exibir o resultado. O programa deve ficar
+repetindo a execução (ou seja, exibição das opções, leitura doa valores e exibição
+do resultado), até que seja escolhida a opção sair*/
+
+/*int main(){
+    int multiplicar,somar,subtrair,dividir,sair,opcao;
+    double v1,v2;
+    do
+    {
+        printf("\nEscolha as opcoes:\n ");
+        printf("1-Multiplicacao\n2-somar\n3-subtrair\n4-divir\n5-Sair\n");
+        scanf("%d", &opcao);
+        printf("De o valor1: ");
+        scanf("%lf", &v1);
+        printf("De o valor2: ");
+        scanf("%lf", &v2);
+
+         switch (opcao)
+            {
+            case 1:{
+                printf("A multiplicacao desses numeros eh: %.2lf", (v1*v2));
+                break;
+            }
+            case 2:{
+                printf("A soma desses numeros eh: %.2lf", (v1+v2));
+                break;
+            }
+            case 3:{
+                printf("A Subtracao desses numeros eh: %.2lf", (v1-v2));
+                break;
+            }
+            case 4:{
+                printf("A divisao desses numeros eh: %.2lf", (v1/v2));
+                break;
+            }
+            case 5:{
+                opcao=5;
+            }
+        }
+    } while (opcao!=5);   
+}*/
+
+/*5. Escreva um programa que receba a idade e o peso de 15 pessoas. O seu programa
+de calcular e mostre as médias dos pesos das pessoas da mesma faixa etária. As
+faixas etárias são: de 1 a 10 anos, de 11 a 20, de 21 a 30 anos e maiores de 31
+anos.*/
+
+/*int main()
+    {
+int idade;
+double kg,soma,soma2,soma3,soma4;
+
+for (int i = 1; i <=3; i++)
+    {
+        printf("\nQual a idade dessa pessoa?:\n ");
+        scanf("%d", &idade);
+        printf("Qual o peso dessa pessoa:\n" );
+        scanf("%lf", &kg);
+    }  
+    if (idade<=10)
+    {
+        soma+=kg; 
+    }else if (idade>=11 || idade<=20)
+    {
+        soma2+=kg;  
+    }else if (idade>=21 || idade<=30)
+    {
+        soma3+=kg; 
+    }else if (idade>=31)
+    {
+        soma4+=kg;
+    }
+     printf("O peso total dessas pessoas eh: %.2lf", soma/15);
+     printf("O peso total dessas pessoas de 11 a 20 anos eh: %.lf", soma2/15);
+     printf("O peso total dessas pessoas de 21 a 30 anos eh: %.2lf", soma3/15);
+     printf("O peso total dessas pessoas de 31 anos acima eh: %.2lf", soma4/15);
+        return 0;
+
+    }*/

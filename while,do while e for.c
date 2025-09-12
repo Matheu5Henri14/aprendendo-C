@@ -135,3 +135,113 @@ do
     i++;
 } while (i <=10); 
 }*/
+
+
+/*tabuada de uma só*/
+
+/*int main(){
+    int  num, cont = 1;
+    printf("Informe um numero: ");
+    scanf("%d", &num);
+    printf("||=====Tabuada=====||\n");
+    do
+    {
+        printf("%d x %d = %d\n", num,cont,(num*cont));
+        cont++;
+    } while (cont <=10);
+    
+    return 0;
+}*/
+
+/*int main(){
+    int n,maior,menor,cont = 1;
+    do
+    {
+        printf("Informe um numero: ");
+        scanf("%d", &n);
+        if(cont==1){
+            maior = n;
+            menor = n;
+            cont++;
+        }else{
+            if(n>maior){
+                maior = n;
+            }
+        
+        else if(n<menor){
+            menor=n;
+        }
+    }
+    } while (n!=0);
+    printf("Maior: %d\n", maior);
+    printf("Menor: %d\n", menor);
+    return 0;
+    
+}*/
+
+/*utilizado for*/
+
+/*int main(){
+    for (int i = 1; i <=10; i++)
+    {
+        printf("%d\n", i);
+    }
+    
+}*/
+
+
+/*int main(){
+    for (int i = 1; i <=20; i++)
+    {
+       printf("O resultado eh: %d\n", (i*i));
+       
+    }
+    
+}*/
+
+/*multiplo de 3*/
+
+/*int main(){
+    int n;
+    printf("Informe um numero: ");
+    scanf("%d", &n);
+    for (int i = 0; i <=n ; i++)
+    {
+        if(i%3==0){
+            printf("%d\n", i);
+        }else{
+            
+        }
+  
+    }
+    
+}*/
+
+/*decrescente*/
+
+/*int main(){
+    int n;
+    printf("Informe um numero: ");
+    scanf("%d", &n);
+    for(int i = n; i>=0;  i--){
+        printf("%d\n", i);
+
+    }
+}*/
+
+/*multiplo de 7 e printar o resultado no final.*/
+
+/*int main(){
+    int soma=0;
+    for (int i = 100; i <=200; i++)
+    {
+        if (i%7==0)
+        {
+            printf("%d\n", i);
+            soma += i;
+        }
+       
+    }
+    printf("A soma desses numeros eh: %d", soma);
+      
+}*/
