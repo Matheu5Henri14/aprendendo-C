@@ -483,3 +483,342 @@ for (int i = 1; i <=3; i++)
         return 0;
 
     }*/
+
+/*Escreva um programa que leia o código de um determinado
+produto e mostre a sua classificação. Utilize a tabela abaixo
+como referência:*/
+
+
+    /*int main(){
+
+        int opcao;
+
+        printf("Escolha uma opcao: ");
+        printf("1:\n");
+        printf("2:\n");
+        printf("3:\n");
+        printf("4:\n");
+        scanf("%d", &opcao);
+
+        switch (opcao)
+        {
+        case 1:{
+            printf("Alimento nao perecivel");
+            break;
+        }
+        case 2:{
+            printf("Alimento_perecivel");
+            break;
+        }
+        case 3:{
+            printf("vestuario");
+            break;
+        }
+        case 4:{
+            printf("limpeza");
+            break;
+        }
+        }
+    }*/
+
+
+    /*Escreva um algoritmo que recebe como entrada o RA de um aluno, as 3 notas obtidas durante o semestre e a nota dos exercícios e
+calcula a média de aproveitamento, usando a fórmula: Média = (nota 1 + nota 2 * 2 + nota 3 * 3 + ME)/7
+A atribuição dos conceitos obedece à regra abaixo. Por fim, o seu algoritmo deve escrever o RA do aluno, suas notas, a média dos
+exercícios, a média final, o conceito correspondente e a mensagem 'Aprovado' se o conceito for A, B ou C, e 'Reprovado' se o conceito
+for D ou E.*/
+
+/*int main(){
+    int RA;
+    double media,nota1,nota2,exercicios,ME;
+    printf("Digite seu RA: ");
+    scanf("%d", &RA);
+    printf("Nota dos exercicios: ");
+    scanf("%lf", &exercicios);
+    printf("Nota da primeira prova: ");
+    scanf("%lf", &nota1);
+    printf("Nota da segunda prova: ");
+    scanf("%lf", &nota2);
+    printf("Media dos exercicios: ");
+    scanf("%lf", &ME);
+
+    media=(nota1+nota2*2+exercicios*3 + ME)/7;
+    if (media>= 90)
+    {
+        printf("A aprovado!");
+    }
+    else if (media>=75 && media<90){
+        printf("B aprovado!");
+    }
+    else if (media>=60 && media<75)
+    {
+        printf("C aprovado!");
+    }
+    else if (media>=40 && media<60)
+    {
+        printf("D voce reprovou");
+    }
+    else if (media<40)
+    {
+        printf("E voce reprovou");
+    }
+    return 0;
+    
+    
+    
+}*/
+
+/* Exercício 3 Escreva um algoritmo que permita fazer um levantamento do estoque de
+vinhos de uma adega, que tem como dados de entrada os tipos de vinhos,
+sendo: “T” para tinto; “B” para branco e “R” para rosê. A quantidade de
+garrafas de vinho da adega é desconhecida. Quando a letra “F” (de fim) for
+informada, o programa deve parar de receber dados e escrever a quantidade
+de cada tipo de vinho e a quantidade total de vinhos na adega.
+*/
+
+
+/*int main(){
+    char vinho;
+    int tinto=0,branco=0,rose=0,total;
+    printf("Escolha um dos estoques:\n");
+    printf("Adega T\n");
+    printf("Adega B\n");
+    printf("Adega R\n");
+    printf("Sair F\n");
+    scanf("%c", &vinho);
+
+while (vinho!='F')
+{
+    switch (vinho)
+    {
+        case 'T':
+        case 't':
+            printf("Vinho tinto adicionado ao estoque!");
+            tinto++;
+            break;
+        
+        case 'B':
+        case 'b':
+            printf("Vinho Branco adicionado ao estoque!");
+            branco++;
+            break;
+        
+        case 'R':
+        case 'r':
+            printf("Vinho Rose adicionado ao estoque!");
+            rose++;
+            break;
+        
+        case 'F':
+        case 'f':
+            printf("\nObrigado por acessar nosso estoque!\n");
+            break;
+    }
+    printf("Escolha um dos estoques:\n");
+    scanf("%c", &vinho);
+    
+}
+    total=tinto+branco+rose;
+     printf("Temos um total de %d tinto %d branco %drose. o total eh:%d", tinto,branco,rose,total);
+
+}*/
+
+/*Em uma eleição presidencial existem quatro candidatos. Os votos são informados através de códigos. Os
+dados utilizados para a contagem dos votos obedecem à seguinte codificação:
+• 1,2,3,4 = voto para os respectivos candidatos;
+• 5 = voto nulo;
+• 6 = voto em branco;
+• Elabore um algoritmo que leia o código do candidato em um voto. Calcule e escreva:
+• total de votos para cada candidato;
+• total de votos nulos;
+• total de votos em branco;
+• Como finalizador do conjunto de votos, tem-se o valor 0.*/
+
+/*int main(){
+    int candidato1 = 0,candidato2 = 0,candidato3 = 0,candidato4 = 0;
+    int Candidatos;
+    double nulo = 0,branco = 0; 
+    printf("1-Eneias!\n");
+    printf("2-Bolsonaro!\n");
+    printf("3-Lula\n");
+    printf("4-Dilma\n");
+    printf("5-Voto Nulo\n");
+    printf("6-Voto em branco\n");
+    printf("0-Encerrar Votacao\n");
+    
+    while (Candidatos)
+    {
+        printf("Digite seu voto:  ");
+        scanf("%d", &Candidatos);
+
+        if (Candidatos == 0) break;
+
+        switch(Candidatos){
+            case 1:{
+                printf("voce votou no Eneias!!\n");
+                candidato1++;
+                break;
+            }
+            case 2:{
+                printf("Voce votou no Bolsonaro!!\n");
+                candidato2++;
+                break;
+            }
+            case 3:{
+                printf("Voce votou no lula PETISTA SAFADOOOOO!!\n");
+                candidato3++;
+                break;
+            }
+            case 4:{
+                printf("Voce votou na Dilma Ladrao de Bancos!\n");
+                candidato4++;
+                break;
+            }
+            case 5:{
+                printf("Voce votou Nulo\n");
+                break;
+            }
+            case 6:{
+                printf("Voce votou em branco\n");
+                break;
+            }
+            case 0:{
+                printf("A votacao acabou");
+                break;
+            }
+            default:{
+                printf("Voto Invalido\n");
+            }
+
+        }
+
+    }
+    printf("O total de votos para o Eneias foi de %d\n",candidato1);
+    printf("O total de votos para o Eneias foi de %d\n",candidato2);
+    printf("O total de votos para o Eneias foi de %d\n",candidato3);
+    printf("O total de votos para o Eneias foi de %d\n",candidato4);
+    printf("O total de votos para o Eneias foi de %2.lf\n",nulo);
+    printf("O total de votos para o Eneias foi de %2.lf\n",branco);
+
+        return 0;
+    }*/
+
+    /*As Ilhas Weblands formam um reino independente nos mares do Pacífico. Como é um reino recente, a sociedade é
+muito influenciada pela informática. A moeda oficial é o Bit; existem notas de B$ 50,00, B$10,00, B$5,00 e B$1,00.
+Você foi contratado(a) para ajudar na programação dos caixas automáticos de um grande banco das Ilhas Weblands.
+• Tarefa: Os caixas eletrônicos das Ilhas Weblands operam com todos os tipos de notas disponíveis, mantendo um
+estoque de cédulas para cada valor ( B$ 50,00, B$10,00, B$5,00 e B$1,00). Os clientes do banco utilizam os caixas
+eletrônicos para efetuar retiradas de um certo número inteiro de Bits. Sua tarefa é escrever um programa que, dado
+o valor de Bits desejado pelo cliente, determine o número de cada uma das notas necessário para totalizar esse
+valor, de modo a minimizar a quantidade de cédulas entregues. Por exemplo, se o cliente deseja retirar B$ 50,00,
+basta entregar uma única nota de cinquenta Bits. Se o cliente deseja retirar B$72,00, é necessário entregar uma nota
+de B$50,00, duas de B$10,00 e duas de B$1,00.
+• O seu programa deve funcionar uma quantidade indeterminada de vezes, até q o valor zero (condição de para do
+programa) seja informado.
+Exercício 5*/
+
+/*int main(){
+    int valor;
+    int nota50,nota10,nota5,nota1;
+    printf("|===Bem vindo===|\n|======ao=======|\n|====Caixa======|\n\n");
+    printf("qual o valor desejado?\n\n");
+    scanf("%d", &valor);
+    while (valor)
+    {
+
+        if (valor == 0){
+            printf("Obrigado por acessar nosso caixa");
+            break;
+        }
+        
+        if (valor<0)
+        {
+            printf("Numero inferior a zero nao eh valido");
+        }
+        nota50=valor/50;
+        valor=valor%50;
+
+        nota10=valor/10;
+        valor=valor%10;
+
+        nota5=valor/5;
+        valor=valor%5;
+
+        nota1=valor/1;
+
+        printf("Nota para entregar\n");
+        if(nota50>0)
+        printf("B$50: %d\n", nota50);
+        if(nota10>0)
+        printf("B$10: %d\n", nota10);
+        if(nota5>0)
+        printf("B$5: %d\n", nota5);
+        if(nota1>0)
+        printf("B$1: %d\n", nota1);
+        
+       
+       }
+       return 0;
+}*/
+
+
+/*#include <stdio.h>
+#include <math.h>
+
+#define PI 3.14159
+
+int main() {
+    int opcao;
+    double raio, area, circunferencia;
+
+    printf("|=== Calculadora de Círculo Interativa ===|\n");
+
+    while (1) {
+        printf("\nEscolha o que voce tem:\n");
+        printf("1 - Raio\n");
+        printf("2 - area\n");
+        printf("3 - Circunferencia\n");
+        printf("0 - Sair\n");
+        printf("Digite a opcao: ");
+        scanf("%d", &opcao);
+
+        if (opcao == 0) {
+            printf("Encerrando a calculadora. Ate mais!\n");
+            break;
+        }
+
+        switch(opcao) {
+            case 1:
+                printf("Digite o valor do raio: ");
+                scanf("%lf", &raio);
+                area = PI * raio * raio;
+                circunferencia = 2 * PI * raio;
+                break;
+
+            case 2:
+                printf("Digite o valor da area: ");
+                scanf("%lf", &area);
+                raio = sqrt(area / PI);
+                circunferencia = 2 * PI * raio;
+                break;
+
+            case 3:
+                printf("Digite o valor da circunferencia: ");
+                scanf("%lf", &circunferencia);
+                raio = circunferencia / (2 * PI);
+                area = PI * raio * raio;
+                break;
+
+            default:
+                printf("Opção invalida! Tente novamente.\n");
+                continue; // volta para o início do loop
+        }
+
+        printf("\nResultados:\n");
+        printf("Raio: %.2lf\n", raio);
+        printf("area: %.2lf\n", area);
+        printf("Circunferencia: %.2lf\n", circunferencia);
+    }
+
+    return 0;
+}*/
