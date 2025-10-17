@@ -14,7 +14,7 @@
 
 }*/
 
-/*int main(){
+int main(){
     int i=0, aluno,n=0;
     double soma;
     printf("Quantos pessoas tem dentro da sala: ");
@@ -33,6 +33,7 @@
  
 
     return 0;
-}*/
+}
+
 
 
