@@ -1,11 +1,13 @@
 #include <stdio.h>
-#define linhas 10
-#define colunas 10
+
+
+/*#define linhas 10
+#define colunas 10*/
 
 /*matriz [linhas] [colunas]*/
 
 
-int main(){
+/*int main(){
 
     int m[9][9];
 
@@ -20,11 +22,11 @@ int main(){
     }
     
 return 0;
-    }
+    }*/
 
 /*matriz [linhas] [colunas]*/
 
-int main(){
+/*int main(){
 
     int m[linhas][colunas];
     int i,j;
@@ -38,7 +40,11 @@ for ( i = 0; i < linhas; i++)
     printf("\n");
 }
 
+}*/ 
 
+/*for de fora) ele é o responsavel pelas linhas ja o laço interno (for de dentro) é responsavel pelas colunas*/
 
-}
+int main(){
     
+return 0;
+}
