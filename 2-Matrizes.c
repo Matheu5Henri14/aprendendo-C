@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
 
 /*impacto em ads (linha no exterior, coluna no interior)*/
 
@@ -25,6 +25,7 @@
     return 0;
 }*/
 
+/*Exercicio 02*/
 
 /*
 int main(){
@@ -71,9 +72,67 @@ int main(){
     return 0;
 }*/
 
+/*Exercicio 04*/
+
+    /*int main() {
+    int matriz[4][5];  
+    int i, j;
+    int soma = 0;
+
+    
+    printf("Digite os elementos da matriz 4x5:\n");
+    for (i = 0; i < 4; i++) {
+        for (j = 0; j < 5; j++) {
+            printf("Elemento [%d][%d]: ", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+
+    
+    for (j = 0; j < 5; j++) {
+        soma += matriz[2][j];
+    }
+
+    
+    printf("\nA soma dos elementos da terceira linha (linha 2) eh: %d\n", soma);
+
+    return 0;
+}*/
+
+
+/*Exercicio 05*/
+
+
+/*int main() {
+    char frase[50];   
+    int i, cont = 0;
+
+    printf("Digite uma frase (máx. 49 caracteres): ");
+    fgets(frase, 50, stdin);  
+
+    for (i = 0; i < strlen(frase); i++) {
+        char c = frase[i];
+        
+        if (c == 'a' || c == 'A' ||
+            c == 'e' || c == 'E' ||
+            c == 'i' || c == 'I' ||
+            c == 'o' || c == 'O' ||
+            c == 'u' || c == 'U') {
+            cont++;
+        }
+    }
+
+    printf("\nTotal de vogais na frase: %d\n", cont);
+
+    return 0;
+}*/
+
+
+
+
 /*Exercicio 06*/
 
-int main(){
+/*int main(){
     int z[5][5];
     int i,j;
     int n = 0;
@@ -104,7 +163,7 @@ int main(){
 
             if (z[i][j] > 10)
             {
-                /* code */
+                
             }
             
         }
@@ -115,4 +174,7 @@ int main(){
     return 0;
     
     
-}
+}*/
+
+/*Exercicio 07*/
+
